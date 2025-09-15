@@ -3,7 +3,7 @@ import requests
 
 # --- CONFIGURACIÓN ---
 
-ESP32_IP = "http://192.168.1.123"
+ESP32_IP = "192.168.100.83"
 
 # --- LÓGICA DE COMUNICACIÓN HTTP ---
 def send_request(endpoint, params=None):
