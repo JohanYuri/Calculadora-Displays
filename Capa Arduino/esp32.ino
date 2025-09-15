@@ -1,17 +1,10 @@
-#include <WiFi.h>
-#include <WebServer.h>
+//Librerias
+#include <Arduino.h>
 
-// --- ¡CONFIGURACIÓN DE RED! ---
-const char* ssid = "MEGACABLE-2.4G-E8AA";
-const char* password = "pD9vzFKzK2";
+// Pines para el Display Rojo (Izquierda)
+const int redDisplayPins[7] = {25, 26, 27, 14, 12, 13, 33};
 
-// Se crea el objeto servidor en el puerto 80 (estándar para HTTP)
-WebServer server(80);
-
-// Display Rojo (Unidades) {a,b,c,d,e,f,g}
-const int redDisplayPins[7] = {4, 26, 27, 14, 12, 13, 16}; 
-
-// Display Azul (Decenas) {a,b,c,d,e,f,g}
+// Pines para el Display Azul (Derecha)
 const int blueDisplayPins[7] = {23, 22, 21, 19, 18, 5, 17};
 
 
