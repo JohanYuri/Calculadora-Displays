@@ -3,7 +3,7 @@ import requests
 
 # --- CONFIGURACIÓN ---
 
-ESP32_IP = "192.168.100.83"
+ESP32_IP = " http://192.168.100.83"
 
 # --- LÓGICA DE COMUNICACIÓN HTTP ---
 def send_request(endpoint, params=None):
@@ -65,7 +65,7 @@ def update_status(message):
 # Esta sección es idéntica a la versión anterior. No necesita cambios.
 root = tk.Tk()
 root.title("Controlador de Display ESP32 (Wi-Fi)")
-root.geometry("350x450")
+root.geometry("400x550")
 root.resizable(False, False)
 
 main_frame = tk.Frame(root, padx=10, pady=10)
