@@ -1,3 +1,4 @@
+//Librerias
 #include <Arduino.h>
 
 // Pines para el Display Rojo (Izquierda)
@@ -6,7 +7,7 @@ const int redDisplayPins[7] = {25, 26, 27, 14, 12, 13, 33};
 // Pines para el Display Azul (Derecha)
 const int blueDisplayPins[7] = {23, 22, 21, 19, 18, 5, 17};
 
-// Mapa de segmentos para CÁTODO COMÚN (1 = ON)
+// Mapa de segmentos para CÁTODO COMÚN (1 = ON) 
 const byte segmentMap[10][7] = {
   {1, 1, 1, 1, 1, 1, 0},  // 0
   {0, 1, 1, 0, 0, 0, 0},  // 1
